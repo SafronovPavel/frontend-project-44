@@ -2,7 +2,6 @@ import readlineSync from 'readline-sync';
 
 // получение рандомного числа
 const getRandomInt = () => Math.floor(Math.random() * 100);
-
 const brainEven = () => {
   console.log('Welcome to the Brain Games!');
   const nameUser = readlineSync.question('May I have your name? ');
