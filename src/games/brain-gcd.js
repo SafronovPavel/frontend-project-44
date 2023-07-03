@@ -10,7 +10,6 @@ const brainGcd = () => {
   for (let i = 0; i < 3; i += 1) {
     const randomNumber1 = getRandomInt();
     const randomNumber2 = getRandomInt();
-    
     const nod = (n, m) => {
       if (m !== 0) {
         const k = n % m;
@@ -18,7 +17,6 @@ const brainGcd = () => {
       }
       return n;
     };
-  
     console.log(`Question: ${randomNumber1} ${randomNumber2}`);
     const answerComputer = String(nod(randomNumber1, randomNumber2));
     const answerUser = readlineSync.question('Your answer: ');
