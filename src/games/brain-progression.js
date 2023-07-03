@@ -11,7 +11,7 @@ const circle = () => {
   const hiddenNumber = getRandomInt(0, progression.length - 1);
   const correctAnswer = String(progression[hiddenNumber]);
   progression[hiddenNumber] = '..';
-  const question = `${progression}`;
+  const question = progression.join(' ');
   return [question, correctAnswer];
 };
 
