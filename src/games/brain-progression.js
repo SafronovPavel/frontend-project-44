@@ -6,7 +6,7 @@ const taskForUser = 'What number is missing in the progression?';
 const circle = () => {
   const start = getRandomInt(0, 5);
   const step = getRandomInt(1, 5);
-  const length = getRandomInt(6, 15);
+  const length = getRandomInt(5, 15);
   const progression = getProgression(start, step, length);
   const hiddenNumber = getRandomInt(0, progression.length - 1);
   const correctAnswer = String(progression[hiddenNumber]);
