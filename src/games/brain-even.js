@@ -1,7 +1,9 @@
 import game from '../index.js';
-import { getRandomInt, evenNumber } from '../utils.js';
+import getRandomInt from '../utils.js';
 
 const taskForUser = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+const evenNumber = (number) => number % 2 === 0;
 
 const circle = () => {
   const randomNumber = getRandomInt(1, 100);

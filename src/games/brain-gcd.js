@@ -1,7 +1,15 @@
 import game from '../index.js';
-import { getRandomInt, findNod } from '../utils.js';
+import getRandomInt from '../utils.js';
 
 const taskForUser = 'Find the greatest common divisor of given numbers.';
+
+const findNod = (n, m) => {
+  if (m !== 0) {
+    const k = n % m;
+    return findNod(m, k);
+  }
+  return n;
+};
 
 const circle = () => {
   const randomNumber1 = getRandomInt(1, 10);
