@@ -13,7 +13,7 @@ const calculate = (randomCharacter, randomNumber1, randomNumber2) => {
     case '*':
       return randomNumber1 * randomNumber2;
     default:
-      console.log(`Unknown character: ${randomCharacter}!`);
+      return console.log(`Unknown character: ${randomCharacter}!`);
   }
 };
 
