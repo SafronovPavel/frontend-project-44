@@ -16,3 +16,11 @@
 <a href="https://asciinema.org/a/594430" target="_blank"><img src="https://asciinema.org/a/594430.svg" /></a>
 ### Игра "Простое ли число?"
 <a href="https://asciinema.org/a/594433" target="_blank"><img src="https://asciinema.org/a/594433.svg" /></a>
+
+### Setup
+1. git clone git@github.com:SafronovPavel/frontend-project-44.git
+2. make install
+3. npm link
+
+### System requirements
+Node.js v20.2.0
