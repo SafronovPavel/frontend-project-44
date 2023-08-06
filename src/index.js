@@ -5,8 +5,8 @@ const game = (taskForUser, circle) => {
   const username = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${username}!`);
   console.log(taskForUser);
-
-  for (let i = 0; i < 3; i += 1) {
+  const numberOfQuestions = 3;
+  for (let i = 0; i < numberOfQuestions; i += 1) {
     const [question, correctAnswer] = circle();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
