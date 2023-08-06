@@ -1,4 +1,4 @@
-import game from '../index.js';
+import runGame from '../index.js';
 import getRandom from '../utils.js';
 
 const taskForUser = 'What number is missing in the progression?';
@@ -23,6 +23,6 @@ const getQuestion = () => {
   return [question, correctAnswer];
 };
 
-const runBrainProgression = () => game(taskForUser, getQuestion);
+const runBrainProgression = () => runGame(taskForUser, getQuestion);
 
 export default runBrainProgression;

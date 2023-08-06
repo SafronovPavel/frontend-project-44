@@ -1,4 +1,4 @@
-import game from '../index.js';
+import runGame from '../index.js';
 import getRandom from '../utils.js';
 
 const taskForUser = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -24,6 +24,6 @@ const getQuestion = () => {
   return [question, correctAnswer];
 };
 
-const runBrainPrime = () => game(taskForUser, getQuestion);
+const runBrainPrime = () => runGame(taskForUser, getQuestion);
 
 export default runBrainPrime;

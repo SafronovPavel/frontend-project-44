@@ -1,4 +1,4 @@
-import game from '../index.js';
+import runGame from '../index.js';
 import getRandom from '../utils.js';
 
 const taskForUser = 'What is the result of the expression?';
@@ -17,6 +17,6 @@ const getQuestion = () => {
   return [question, correctAnswer];
 };
 
-const runBrainCalc = () => game(taskForUser, getQuestion);
+const runBrainCalc = () => runGame(taskForUser, getQuestion);
 
 export default runBrainCalc;
