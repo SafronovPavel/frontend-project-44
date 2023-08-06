@@ -1,11 +1,11 @@
 import game from '../index.js';
-import getRandomInt from '../utils.js';
+import getRandom from '../utils.js';
 
 const taskForUser = 'What is the result of the expression?';
 
 const circle = () => {
-  const randomNumber1 = getRandomInt(0, 10);
-  const randomNumber2 = getRandomInt(0, 10);
+  const randomNumber1 = getRandom();
+  const randomNumber2 = getRandom();
   const sum = randomNumber1 + randomNumber2;
   const subtraction = randomNumber1 - randomNumber2;
   const multiplication = randomNumber1 * randomNumber2;

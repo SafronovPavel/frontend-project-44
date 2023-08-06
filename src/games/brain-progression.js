@@ -1,5 +1,5 @@
 import game from '../index.js';
-import getRandomInt from '../utils.js';
+import getRandom from '../utils.js';
 
 const taskForUser = 'What number is missing in the progression?';
 
@@ -12,11 +12,11 @@ const getProgression = (start, step, length) => {
 };
 
 const circle = () => {
-  const start = getRandomInt(0, 5);
-  const step = getRandomInt(1, 5);
-  const length = getRandomInt(5, 15);
+  const start = getRandom();
+  const step = getRandom();
+  const length = getRandom(5, 15);
   const progression = getProgression(start, step, length);
-  const hiddenNumber = getRandomInt(0, progression.length - 1);
+  const hiddenNumber = getRandom(0, progression.length - 1);
   const correctAnswer = String(progression[hiddenNumber]);
   progression[hiddenNumber] = '..';
   const question = progression.join(' ');
