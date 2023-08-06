@@ -23,6 +23,6 @@ const circle = () => {
   return [question, correctAnswer];
 };
 
-const brainProgression = () => game(taskForUser, circle);
+const runBrainProgression = () => game(taskForUser, circle);
 
-export default brainProgression;
+export default runBrainProgression;
