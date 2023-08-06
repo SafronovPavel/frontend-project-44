@@ -11,7 +11,7 @@ const circle = () => {
   const multiplication = randomNumber1 * randomNumber2;
   const operations = [sum, subtraction, multiplication];
   const operators = ['+', '-', '*'];
-  const randomCharacter = Math.floor(Math.random() * operators.length);
+  const randomCharacter = getRandom(0, operators.length - 1);
   const question = `${randomNumber1} ${operators[randomCharacter]} ${randomNumber2}`;
   const correctAnswer = String(operations[randomCharacter]);
   return [question, correctAnswer];
