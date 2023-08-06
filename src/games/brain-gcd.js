@@ -3,12 +3,12 @@ import getRandom from '../utils.js';
 
 const taskForUser = 'Find the greatest common divisor of given numbers.';
 
-const findGcd = (n, m) => {
-  if (m !== 0) {
-    const k = n % m;
-    return findGcd(m, k);
+const findGcd = (number1, number2) => {
+  if (number2 !== 0) {
+    const remainder = number1 % number2;
+    return findGcd(number2, remainder);
   }
-  return n;
+  return number1;
 };
 
 const circle = () => {
