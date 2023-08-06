@@ -17,13 +17,13 @@ const testPrime = (n) => {
   return true;
 };
 
-const circle = () => {
+const getQuestion = () => {
   const randomNumber = getRandom(1, 100);
   const question = `${randomNumber}`;
   const correctAnswer = testPrime(randomNumber) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
-const runBrainPrime = () => game(taskForUser, circle);
+const runBrainPrime = () => game(taskForUser, getQuestion);
 
 export default runBrainPrime;

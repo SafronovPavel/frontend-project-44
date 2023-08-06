@@ -11,7 +11,7 @@ const getProgression = (start, step, length) => {
   return progression;
 };
 
-const circle = () => {
+const getQuestion = () => {
   const start = getRandom();
   const step = getRandom();
   const length = getRandom(5, 15);
@@ -23,6 +23,6 @@ const circle = () => {
   return [question, correctAnswer];
 };
 
-const runBrainProgression = () => game(taskForUser, circle);
+const runBrainProgression = () => game(taskForUser, getQuestion);
 
 export default runBrainProgression;

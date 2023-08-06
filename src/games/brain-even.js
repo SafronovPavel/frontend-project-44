@@ -5,13 +5,13 @@ const taskForUser = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 const isEvenNumber = (number) => number % 2 === 0;
 
-const circle = () => {
+const getQuestion = () => {
   const randomNumber = getRandom(1, 100);
   const question = `${randomNumber}`;
   const correctAnswer = isEvenNumber(randomNumber) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
-const runBrainEven = () => game(taskForUser, circle);
+const runBrainEven = () => game(taskForUser, getQuestion);
 
 export default runBrainEven;

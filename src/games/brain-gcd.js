@@ -11,7 +11,7 @@ const findGcd = (number1, number2) => {
   return number1;
 };
 
-const circle = () => {
+const getQuestion = () => {
   const randomNumber1 = getRandom();
   const randomNumber2 = getRandom();
   const question = `${randomNumber1} ${randomNumber2}`;
@@ -19,6 +19,6 @@ const circle = () => {
   return [question, correctAnswer];
 };
 
-const runBrainGcd = () => game(taskForUser, circle);
+const runBrainGcd = () => game(taskForUser, getQuestion);
 
 export default runBrainGcd;

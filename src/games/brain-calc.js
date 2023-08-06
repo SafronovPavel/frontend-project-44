@@ -3,7 +3,7 @@ import getRandom from '../utils.js';
 
 const taskForUser = 'What is the result of the expression?';
 
-const circle = () => {
+const getQuestion = () => {
   const randomNumber1 = getRandom();
   const randomNumber2 = getRandom();
   const sum = randomNumber1 + randomNumber2;
@@ -17,6 +17,6 @@ const circle = () => {
   return [question, correctAnswer];
 };
 
-const runBrainCalc = () => game(taskForUser, circle);
+const runBrainCalc = () => game(taskForUser, getQuestion);
 
 export default runBrainCalc;
