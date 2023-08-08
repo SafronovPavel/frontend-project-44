@@ -4,25 +4,25 @@ import getRandomNumber from '../utils.js';
 const taskForUser = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 
-const calculate = (randomCharacter, randomNumber1, randomNumber2) => {
+const calculate = (randomCharacter, Number1, Number2) => {
   switch (randomCharacter) {
     case '+':
-      return randomNumber1 + randomNumber2;
+      return Number1 + Number2;
     case '-':
-      return randomNumber1 - randomNumber2;
+      return Number1 - Number2;
     case '*':
-      return randomNumber1 * randomNumber2;
+      return Number1 * Number2;
     default:
       throw new Error(`Unknown character: ${randomCharacter} !`);
   }
 };
 
 const getRound = () => {
-  const randomNumber1 = getRandomNumber();
-  const randomNumber2 = getRandomNumber();
+  const Number1 = getRandomNumber();
+  const Number2 = getRandomNumber();
   const randomCharacter = operators[getRandomNumber(0, operators.length - 1)];
-  const question = `${randomNumber1} ${randomCharacter} ${randomNumber2}`;
-  const correctAnswer = String(calculate(randomCharacter, randomNumber1, randomNumber2));
+  const question = `${Number1} ${randomCharacter} ${Number2}`;
+  const correctAnswer = String(calculate(randomCharacter, Number1, Number2));
   return [question, correctAnswer];
 };
 
