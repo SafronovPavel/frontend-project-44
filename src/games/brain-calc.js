@@ -17,7 +17,7 @@ const calculate = (randomCharacter, randomNumber1, randomNumber2) => {
   }
 };
 
-const getQuestion = () => {
+const getRound = () => {
   const randomNumber1 = getRandom();
   const randomNumber2 = getRandom();
   const randomCharacter = operators[getRandom(0, operators.length - 1)];
@@ -26,6 +26,6 @@ const getQuestion = () => {
   return [question, correctAnswer];
 };
 
-const runBrainCalc = () => runGame(taskForUser, getQuestion);
+const runBrainCalc = () => runGame(taskForUser, getRound);
 
 export default runBrainCalc;
