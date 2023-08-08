@@ -5,8 +5,8 @@ const runGame = (taskForUser, getQuestion) => {
   const username = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${username}!`);
   console.log(taskForUser);
-  const numberOfQuestions = 3;
-  for (let i = 0; i < numberOfQuestions; i += 1) {
+  const countQuestions = 3;
+  for (let i = 0; i < countQuestions; i += 1) {
     const [question, correctAnswer] = getQuestion();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
