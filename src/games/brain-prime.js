@@ -3,7 +3,7 @@ import getRandomNumber from '../utils.js';
 
 const taskForUser = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const isTestPrime = (number) => {
+const isPrime = (number) => {
   if (number < 2) return false;
   for (let i = 2; i < number; i += 1) {
     if (number % i === 0) {
@@ -16,7 +16,7 @@ const isTestPrime = (number) => {
 const getRound = () => {
   const randomNumber = getRandomNumber(1, 100);
   const question = `${randomNumber}`;
-  const correctAnswer = isTestPrime(randomNumber) ? 'yes' : 'no';
+  const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
