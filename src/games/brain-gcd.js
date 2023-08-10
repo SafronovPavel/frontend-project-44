@@ -19,6 +19,6 @@ const getRound = () => {
   return [question, correctAnswer];
 };
 
-const runBrainGcd = () => runGame(taskForUser, getRound);
+const runBrainGCD = () => runGame(taskForUser, getRound);
 
-export default runBrainGcd;
+export default runBrainGCD;
