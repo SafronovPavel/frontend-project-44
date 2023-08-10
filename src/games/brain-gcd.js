@@ -12,10 +12,10 @@ const findGCD = (number1, number2) => {
 };
 
 const getRound = () => {
-  const Number1 = getRandomNumber();
-  const Number2 = getRandomNumber();
-  const question = `${Number1} ${Number2}`;
-  const correctAnswer = String(findGCD(Number1, Number2));
+  const number1 = getRandomNumber();
+  const number2 = getRandomNumber();
+  const question = `${number1} ${number2}`;
+  const correctAnswer = String(findGCD(number1, number2));
   return [question, correctAnswer];
 };
 
